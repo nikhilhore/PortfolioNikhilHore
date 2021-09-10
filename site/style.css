@@ -2,9 +2,11 @@
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
+    width: 100%;
     background-color: rgb(16, 32, 46);
     color: white;
 }
@@ -16,9 +18,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 115, 0);
     position: sticky;
     top: 0;
+    background-color: rgb(255, 115, 0);
 }
 
 #headerone {
@@ -40,6 +42,21 @@ header a {
     padding: 10px;
 }
 
+li {
+    list-style-type: none;
+}
+
+.sectionheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#education, #certifications {
+    display: flex;
+    flex-direction: column;
+}
+
 #certifications a {
     color: lightskyblue;
 }
@@ -50,8 +67,16 @@ header a {
     justify-content: space-around;
 }
 
-#address {
-    margin-bottom: 5px;
+#address, #phone {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.contact-element-headings {
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 #social {
@@ -80,14 +105,41 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.95);
     color: white;
     position: sticky;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 @media screen and (max-width: 720px) {
     header a {
         font-size: large;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    * {
+        font-size: large;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #social {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header a {
+        font-size: small;
+        margin-right: 2.5px;
+        margin-left: 2.5px;
+    }
+
+    * {
+        font-size: small;
     }
 }
