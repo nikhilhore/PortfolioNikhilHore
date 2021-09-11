@@ -7,20 +7,41 @@
 
 html {
     width: 100%;
-    background-color: rgb(16, 32, 46);
+    background-color: black;
     color: white;
+}
+
+body {
+    height: 100%;
 }
 
 header {
     width: 100%;
-    height: 50px;
+    height: 10vh;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: rgb(255, 115, 0);
+    background-color: black;
+}
+
+#myname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nikhil {
+    color: lightskyblue;
+    margin-right: 5px;
+}
+
+#hore {
+    color: lightcoral;
+    margin-right: 5px;
 }
 
 #headerone {
@@ -34,12 +55,29 @@ header a {
     margin-right: 10px;
     margin-left: 10px;
     text-decoration: none;
-    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
     font-size: x-large;
+}
+
+header a:active {
+    color: yellow;
+}
+
+#headerone a {
+    color: yellow;
+}
+
+#headertwo a {
+    color: lightgreen;
 }
 
 .main-container {
     padding: 10px;
+}
+
+.section-container {
+    height: 85vh;
 }
 
 li {
@@ -100,7 +138,7 @@ li {
 
 footer {
     width: 100%;
-    height: 50px;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,15 +149,18 @@ footer {
     background-color: rgba(0, 0, 0, 0.95);
 }
 
+/* h1{
+    color: lightskyblue;
+}
+
+h2 {
+    color: lightskyblue;
+} */
+
 @media screen and (max-width: 720px) {
     header a {
-        font-size: large;
         margin-right: 5px;
         margin-left: 5px;
-    }
-
-    * {
-        font-size: large;
     }
 
     #contact {
@@ -128,18 +169,13 @@ footer {
     }
 
     #social {
-        flex-direction: row;
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 360px) {
     header a {
-        font-size: small;
         margin-right: 2.5px;
         margin-left: 2.5px;
-    }
-
-    * {
-        font-size: small;
     }
 }
