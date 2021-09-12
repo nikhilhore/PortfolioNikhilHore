@@ -245,14 +245,14 @@ footer {
     }
           
     .dropdown-content li {
-        color: black;
+        /* color: none; */
         display: block;
         padding: 10px;
     }
 
-    .dropdown a:hover {
-        background-color: black;
-    }
+    /* .dropdown a:hover {
+        background-color: none;
+    } */
 
     .show {
         display: block;
