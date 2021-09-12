@@ -11,102 +11,102 @@
 
 <body>
     <header>
-        <div id="myname">
+        <div class="dropdown">
+            <button onclick="dropdowntoggle()" id="dropbtn" class="header-block hidden"><h1>&#9776;</h1></button>
+            <ul id="mydropdown" class="header-block dropdown-content">
+                <li><h2><a href="#sectionh">Home</a></h2></li>
+                <li><h2><a href="#sectiona">About</a></h2></li>
+                <li><h2><a href="#sectionw">Work</a></h2></li>
+                <li><h2><a href="#sectionr">Resume</a></h2></li>
+                <li><h2><a id="contactlink" href="#sectionc">Contact</a></h2></li>
+            </ul>
+        </div>
+        <a class="header-block" href="https://nikhilhore.github.io/PortfolioNikhilHore/site/">
             <h1 id="nikhil">Nikhil</h1>
             <h1 id="hore">Hore</h1>
-        </div>
-        <div id="headerone">
-            <h3><a id="homelink" href="#sectionh">Home</a></h3>
-            <h3><a id="aboutlink" href="#sectiona">About</a></h3>
-            <h3><a id="worklink" href="#sectionw">Work</a></h3>
-            <h3><a id="resumelink" href="#sectionr">Resume</a></h3>
-        </div>
-        <div id="headertwo">
-            <h3><a href="#sectionc">Contact</a></h3>
-        </div>
+        </a>
     </header>
-    <div class="main-container">
+    <div>
 
-        <h1 id="sectionh" class="sectionheading"><br></h1>
-        <br><br>
-        <div class="section-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia, impedit architecto, necessitatibus
-                porro cum aliquid ex animi cupiditate distinctio aspernatur quaerat. Quas nostrum optio, eos officia
-                explicabo eius natus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aspernatur enim assumenda
-                consequuntur unde, officia veniam cum? Ipsa beatae atque iure aperiam, veniam dicta natus dolores, minus
-                quidem a quas!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus nulla sit, tenetur temporibus
-                magni ipsum, ipsa sint, modi sed accusamus. Ad aut debitis libero voluptatum molestiae iusto, tempora
-                ab.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sint alias minus recusandae, praesentium
-                quas sit rerum natus a atque expedita quos labore ea accusamus, iusto facere! Adipisci, quas odio.</p>
-        </div>
-
-        <div class="section-container">
-            <h1 id="sectiona" class="sectionheading"><br><br>About</h1>
-            <br>
-            <div id="education">
-                <h2>Education:</h2>
-                <ul>
-                    <li>
-                        <h4>Bachelor of Technology in Mechanical Engineering</h4>
-                        <h3>Shri Guru Gobind Singhji Institute of Engineering and Technology</h3>
-                        <p>Nanded, Mahrashtra, India.</p>
-                        <p>08/2018-06/2022</p>
-                    </li>
-                </ul>
+        <div class="section-container" id="sectionh">
+            <div class="home-section">
+                <div class="home-block">
+                    <img src="images/nikhilhore.jpg" alt="Nikhil Hore">
+                </div>
+                <div class="home-block">
+                    <h1>Hi,</h1>
+                    <h2>I am Nikhil Hore</h2>
+                    <h3>Professional Web Developer</h3>
+                </div>
             </div>
+            <div><p>A self taught and passionate person with innovative mindset.</p></div>
+        </div>
+
+        <div class="section-container" id="sectiona">
+            <h1 class="sectionheading">About</h1>
             <br>
-            <div id="certifications">
-                <h2>Certifications:</h2>
-                <ul>
-                    <li>
-                        <h3>HTML, CSS, and Javascript for Web Developers</h3>
-                        <p>Verify at <a href="https://coursera.org/verify/64FHUDLX69LG" target="blank">coursera.org</a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Python Data Structures</h3>
-                        <p>Verify at <a href="https://coursera.org/verify/ABDY8YA559XD" target="blank">coursera.org</a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Python Functions, Files, and Dictionaries</h3>
-                        <p>Verify at <a href="https://coursera.org/verify/S5NETGBDGTXM" target="blank">coursera.org</a>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Data Collection and Processing with Python</h3>
-                        <p>Verify at <a href="https://coursera.org/verify/A86UM427MBNZ" target="blank">coursera.org</a>
-                        </p>
-                    </li>
-                </ul>
+            <div id="about">
+                <div id="education">
+                    <h2>Education:</h2>
+                    <ul>
+                        <li>
+                            <h4>Bachelor of Technology in Mechanical Engineering</h4>
+                            <h3>Shri Guru Gobind Singhji Institute of Engineering and Technology</h3>
+                            <p>Nanded, Mahrashtra, India.</p>
+                            <p>08/2018-06/2022</p>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div id="certifications">
+                    <h2>Certifications:</h2>
+                    <ul>
+                        <li>
+                            <h3>HTML, CSS, and Javascript for Web Developers</h3>
+                            <p>Verify at <a href="https://coursera.org/verify/64FHUDLX69LG" target="blank">coursera.org</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Python Data Structures</h3>
+                            <p>Verify at <a href="https://coursera.org/verify/ABDY8YA559XD" target="blank">coursera.org</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Python Functions, Files, and Dictionaries</h3>
+                            <p>Verify at <a href="https://coursera.org/verify/S5NETGBDGTXM" target="blank">coursera.org</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Data Collection and Processing with Python</h3>
+                            <p>Verify at <a href="https://coursera.org/verify/A86UM427MBNZ" target="blank">coursera.org</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="section-container">
-            <h1 id="sectionw" class="sectionheading"><br><br>Personal projects and work experience</h1>
+        <div class="section-container" id="sectionw">
+            <h1 class="sectionheading">Personal works</h1>
         </div>
-        <br>
 
-        <div class="section-container">
-            <h1 id="sectionr" class="sectionheading"><br><br>Resume</h1>
+        <div class="section-container" id="sectionr">
+            <h1 class="sectionheading">Resume</h1>
+            <button><a href="docs/resumenikhilhore.pdf" target="blank"><h2>open</h2></a></button>
         </div>
-        <br>
 
-        <div class="section-container">
-            <h1 id="sectionc" class="sectionheading"><br><br>Contact</h1>
+        <div class="section-container" id="sectionc">
+            <h1 class="sectionheading">Contact</h1>
             <br>
             <div id="contact">
-                <div>
+                <div id="address-phone">
                     <div id="address">
-                        <p class="contact-element-headings">Address:</p>
+                        <p class="contact-element-headings">Address:&nbsp;</p>
                         <p>Flat no. 204, Vaishnavi Plaza,<br>Chahtrapati Chowk, Purna Road,<br>Nanded, Maharashtra
                             431605.</p>
                     </div>
                     <div id="phone">
-                        <p class="contact-element-headings">Phone:</p>
+                        <p class="contact-element-headings">Phone:&nbsp;</p>
                         <p>&nbsp;&nbsp;&nbsp;+91 9503203950</p>
                     </div>
                 </div>

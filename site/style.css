@@ -5,20 +5,18 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     width: 100%;
+    height: 100%;
     background-color: black;
     color: white;
-}
-
-body {
-    height: 100%;
+    padding: 0 10px 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
     width: 100%;
     height: 10vh;
-    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,12 +24,19 @@ header {
     position: sticky;
     top: 0;
     background-color: black;
+    /* border: 1px solid white; */
 }
 
-#myname {
+.header-block {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.header-block h1 {
+    font-family: cursive;
 }
 
 #nikhil {
@@ -44,50 +49,69 @@ header {
     margin-right: 5px;
 }
 
-#headerone {
+header ul a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: yellow;
+}
+
+#contactlink{
+    color: lightgreen;
+}
+
+.dropdown {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-header a {
-    margin-right: 10px;
-    margin-left: 10px;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: x-large;
+#dropbtn {
+    width: 0;
 }
 
-header a:active {
-    color: yellow;
-}
-
-#headerone a {
-    color: yellow;
-}
-
-#headertwo a {
-    color: lightgreen;
-}
-
-.main-container {
-    padding: 10px;
+#dropbtn.hidden {
+    visibility: hidden;
 }
 
 .section-container {
-    height: 85vh;
-}
-
-li {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* border: 1px solid white; */
 }
 
 .sectionheading {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sectionh img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.home-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 #education, #certifications {
@@ -99,8 +123,22 @@ li {
     color: lightskyblue;
 }
 
+#sectionr button {
+    background-image: linear-gradient(to right, lightskyblue, lightcoral);
+    height: 50px;
+    width: 100px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+#sectionr a {
+    color: black;
+    text-decoration: none;
+}
+
 #contact {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -110,11 +148,11 @@ li {
     display: flex;
     flex-direction: row;
     align-items: top;
+    justify-content: left;
 }
 
-.contact-element-headings {
-    font-weight: bold;
-    margin-right: 10px;
+#address-phone {
+    margin: 10vh;
 }
 
 #social {
@@ -122,6 +160,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10vh;
 }
 
 #social-logos {
@@ -146,16 +185,16 @@ footer {
     color: white;
     position: sticky;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 1px solid white; */
 }
 
-/* h1{
-    color: lightskyblue;
+@media screen and (max-width: 800px) {
+    #address-phone, #social {
+        margin: 5vh;
+    }
 }
-
-h2 {
-    color: lightskyblue;
-} */
 
 @media screen and (max-width: 720px) {
     header a {
@@ -171,11 +210,58 @@ h2 {
     #social {
         margin-top: 10px;
     }
-}
 
-@media screen and (max-width: 360px) {
-    header a {
-        margin-right: 2.5px;
-        margin-left: 2.5px;
+    /* Drop down menu */
+
+    #dropbtn.hidden {
+        visibility: visible;
     }
+
+    #dropbtn {
+        background-color: black;
+        color: lightgreen;
+        border: none;
+        cursor: pointer;
+    }
+
+    #dropbtn:hover, #dropbtn:focus {
+        color: white;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: skyblue;
+        min-width: 160px;
+        overflow: auto;
+        z-index: 1;
+    }
+          
+    .dropdown-content li {
+        color: black;
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown a:hover {
+        background-color: black;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #mydropdown a {
+        color: coral;
+    }
+
+    /* Drop down menu */
+
 }
