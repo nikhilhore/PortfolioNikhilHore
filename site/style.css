@@ -48,7 +48,8 @@ header {
     margin-right: 5px;
 }
 
-header ul a {
+header ul button {
+    background-color: transparent;
     margin: 0 10px 0 10px;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -79,9 +80,10 @@ header ul a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 85vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    overflow: auto;
 }
 
 .sectionheading {
@@ -246,6 +248,10 @@ footer {
         padding: 10px;
     }
 
+    .dropdown-content li h2 {
+        color: lightcoral;
+    }
+
     .show {
         display: block;
     }
@@ -256,4 +262,8 @@ footer {
 
     /* Drop down menu */
 
+}
+
+.hide {
+    display: none;
 }

@@ -18,19 +18,19 @@
             </button>
             <ul id="mydropdown" class="header-block dropdown-content">
                 <li>
-                    <h2><a href="#sectionh">Home</a></h2>
+                    <button onclick="addHideClass('sectionh')"><h2>Home</h2></button>
                 </li>
                 <li>
-                    <h2><a href="#sectiona">About</a></h2>
+                    <button onclick="addHideClass('sectiona')"><h2>About</h2></button>
                 </li>
                 <li>
-                    <h2><a href="#sectionw">Work</a></h2>
+                    <button onclick="addHideClass('sectionw')"><h2>Work</h2></button>
                 </li>
                 <li>
-                    <h2><a href="#sectionr">Resume</a></h2>
+                    <button href="#sectionh" onclick="addHideClass('sectionr')"><h2>Resume</h2></button>
                 </li>
                 <li>
-                    <h2><a id="contactlink" href="#sectionc">Contact</a></h2>
+                    <button id="contactlink" onclick="addHideClass('sectionc')"><h2>Contact</h2></button>
                 </li>
             </ul>
         </div>
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="section-container" id="sectiona">
+        <div class="section-container hide" id="sectiona">
             <h1 class="sectionheading">About</h1>
             <br>
             <div id="about">
@@ -105,11 +105,11 @@
             </div>
         </div>
 
-        <div class="section-container" id="sectionw">
+        <div class="section-container hide" id="sectionw">
             <h1 class="sectionheading">Personal works</h1>
         </div>
 
-        <div class="section-container" id="sectionr">
+        <div class="section-container hide" id="sectionr">
             <h1 class="sectionheading">Resume</h1>
             <button><a href="https://drive.google.com/file/d/1r8ZkRkonPjORcW3mcLKXuRh8XgD0r19p/view?usp=sharing"
                     target="blank">
@@ -117,7 +117,7 @@
                 </a></button>
         </div>
 
-        <div class=" section-container" id="sectionc">
+        <div class=" section-container hide" id="sectionc">
             <h1 class="sectionheading">Contact</h1>
             <br>
             <div id="contact">
