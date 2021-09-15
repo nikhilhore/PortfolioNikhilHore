@@ -13,52 +13,46 @@
 <body>
     <header>
         <div class="dropdown">
-            <button onclick="dropdowntoggle()" id="dropbtn" class="header-block hidden">
-                <h1>&#9776;</h1>
+            <button onclick="dropdowntoggle()" class="dropbtn header-block hide">
+                <h1 class="dropbtn">&#9776;</h1>
             </button>
-            <ul id="mydropdown" class="header-block dropdown-content">
-                <li>
-                    <button onclick="addHideClass('sectionh')"><h2>Home</h2></button>
-                </li>
-                <li>
-                    <button onclick="addHideClass('sectiona')"><h2>About</h2></button>
-                </li>
-                <li>
-                    <button onclick="addHideClass('sectionw')"><h2>Work</h2></button>
-                </li>
-                <li>
-                    <button href="#sectionh" onclick="addHideClass('sectionr')"><h2>Resume</h2></button>
-                </li>
-                <li>
-                    <button id="contactlink" onclick="addHideClass('sectionc')"><h2>Contact</h2></button>
-                </li>
-            </ul>
+            <div id="mydropdown" class="header-block dropdown-content">
+                <button class="active" onclick="addHideClass('sectionh')"><h2>Home</h2></button>
+
+                <button onclick="addHideClass('sectiona')"><h2>About</h2></button>
+
+
+                <button onclick="addHideClass('sectionw')"><h2>Work</h2></button>
+
+                <button href="#sectionh" onclick="addHideClass('sectionr')"><h2>Resume</h2></button>
+
+                <button id="contactlink" onclick="addHideClass('sectionc')"><h2>Contact</h2></button>
+            </div>
         </div>
         <a class="header-block" href="https://nikhilhore.github.io/PortfolioNikhilHore/site/">
             <h1 id="nikhil">Nikhil</h1>
             <h1 id="hore">Hore</h1>
         </a>
     </header>
-    <div>
+    <div id="main-container">
 
         <div class="section-container" id="sectionh">
-            <div class="home-section">
+            <div id="home-section">
                 <div class="home-block">
                     <img src="images/nikhilhore.jpg" alt="Nikhil Hore">
                 </div>
                 <div class="home-block">
                     <h1>Hi,</h1>
-                    <h2>I am Nikhil Hore</h2>
-                    <h3>Web Developer</h3>
+                    <h1>I'm Nikhil&nbsp;Hore</h1>
+                    <h2>Web&nbsp;Developer</h2>
+                    <br>
+                    <p>A self taught and passionate person with innovative mindset.</p>
                 </div>
-            </div>
-            <div>
-                <p>A self taught and passionate person with innovative mindset.</p>
             </div>
         </div>
 
-        <div class="section-container hide" id="sectiona">
-            <h1 class="sectionheading">About</h1>
+        <div class="section-container hidden" id="sectiona">
+            <h1 class="sectionheading">KnOw MoRe AbOuT mE</h1>
             <br>
             <div id="about">
                 <div id="education">
@@ -105,20 +99,21 @@
             </div>
         </div>
 
-        <div class="section-container hide" id="sectionw">
-            <h1 class="sectionheading">Personal works</h1>
+        <div class="section-container hidden" id="sectionw">
+            <h1 class="sectionheading">pErSoNaL wOrK</h1>
         </div>
 
-        <div class="section-container hide" id="sectionr">
-            <h1 class="sectionheading">Resume</h1>
+        <div class="section-container hidden" id="sectionr">
+            <h1 class="sectionheading">TaKe A qUiCk LoOk At My ReSuMe &darr;</h1>
+            <br>
             <button><a href="https://drive.google.com/file/d/1r8ZkRkonPjORcW3mcLKXuRh8XgD0r19p/view?usp=sharing"
                     target="blank">
                     <h2>open</h2>
                 </a></button>
         </div>
 
-        <div class=" section-container hide" id="sectionc">
-            <h1 class="sectionheading">Contact</h1>
+        <div class=" section-container hidden" id="sectionc">
+            <h1 class="sectionheading">gEt In ToUcH...</h1>
             <br>
             <div id="contact">
                 <div id="address-phone">
