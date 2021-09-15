@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header div {
