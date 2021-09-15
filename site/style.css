@@ -272,6 +272,10 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
+    #home-section.hidden {
+        display: none;
+    }
 }
 
 .hidden {
