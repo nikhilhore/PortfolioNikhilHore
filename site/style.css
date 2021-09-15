@@ -232,7 +232,7 @@ footer {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: lightskyblue;
+        background-color: white;
         border-radius: 10px;
         overflow: auto;
         z-index: 1;
@@ -248,8 +248,11 @@ footer {
     }
 
     .dropdown-content button:hover {
+        background-color: black;
+    }
+
+    .dropdown-content button:hover h2 {
         color: white;
-        background-color: lightcoral;
     }
     
     .show {
