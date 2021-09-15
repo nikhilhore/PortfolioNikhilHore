@@ -81,8 +81,6 @@ header ul button {
     align-items: center;
     justify-content: center;
     height: 85vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
     overflow: auto;
 }
 
