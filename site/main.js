@@ -11,6 +11,9 @@ function addHideClass(sectionid) {
     }
     let sect = document.getElementById(sectionid);
     sect.classList.remove("hidden");
+    sect= document.getElementById('sectionh');
+    sect.classList.remove("show");
+    sect.classList.add("hidden");
 }
 
 window.onclick = function (event) {
