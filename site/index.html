@@ -17,16 +17,25 @@
                 <h1 class="dropbtn">&#9776;</h1>
             </button>
             <div id="mydropdown" class="header-block dropdown-content">
-                <button class="active" onclick="addHideClass('sectionh')"><h2>Home</h2></button>
+                <button id="buttonh" class="active" onclick="addHideClass('sectionh')">
+                    <h2>Home</h2>
+                </button>
 
-                <button onclick="addHideClass('sectiona')"><h2>About</h2></button>
+                <button id="buttona" onclick="addHideClass('sectiona')">
+                    <h2>About</h2>
+                </button>
 
+                <button id="buttonw" onclick="addHideClass('sectionw')">
+                    <h2>Work</h2>
+                </button>
 
-                <button onclick="addHideClass('sectionw')"><h2>Work</h2></button>
+                <button id="buttonr" href="#sectionh" onclick="addHideClass('sectionr')">
+                    <h2>Resume</h2>
+                </button>
 
-                <button href="#sectionh" onclick="addHideClass('sectionr')"><h2>Resume</h2></button>
-
-                <button id="contactlink" onclick="addHideClass('sectionc')"><h2>Contact</h2></button>
+                <button id="buttonc" onclick="addHideClass('sectionc')">
+                    <h2>Contact</h2>
+                </button>
             </div>
         </div>
         <a class="header-block" href="https://nikhilhore.github.io/PortfolioNikhilHore/site/">

@@ -66,10 +66,10 @@ header a {
 #hore {
     color: lightcoral;
 }
-
+/* 
 #contactlink{
     color: lightgreen;
-}
+} */
 
 #main-container {
     width: 100%;
@@ -284,4 +284,9 @@ footer {
 
 .hidden {
     display: none;
+}
+
+.active {
+    color: yellow;
+    font-size: large;
 }
