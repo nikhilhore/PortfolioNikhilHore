@@ -186,7 +186,7 @@ footer {
     background-color: black;
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 801px) {
     header button:hover {
         color: black;
         background-color: white;
@@ -197,7 +197,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 
     #contact {
         display: flex;
