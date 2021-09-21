@@ -43,6 +43,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 header div {
@@ -92,6 +93,7 @@ header a {
     padding: 5px 20px;
     overflow: auto;
     margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .section-container {
@@ -199,7 +201,7 @@ footer {
     bottom: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     z-index: 10;
-    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (min-width: 801px) {
