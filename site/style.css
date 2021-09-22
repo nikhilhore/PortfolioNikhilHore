@@ -265,12 +265,6 @@ footer {
     /* dropdown menu */
 }
 
-@media screen and (max-height: 767px) {
-    html, body {
-        background-position: bottom right;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .work-item {
         flex-direction: column;
