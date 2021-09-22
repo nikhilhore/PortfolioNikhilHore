@@ -7,87 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Nikhil Hore</title>
-    <link rel="icon" href="images/nikhilhoreicon.jpg" type="image/x-icon">
+    <link rel="icon" href="images/newicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="dropdown">
-            <button onclick="dropdowntoggle()" class="dropbtn header-block hide">
-                <h1 class="dropbtn">&#9776;</h1>
-            </button>
-            <div id="mydropdown" class="header-block dropdown-content">
-                <button id="buttonh" class="active" onclick="addHideClass('sectionh')">
-                    <h2>Home</h2>
-                </button>
 
-                <button id="buttona" onclick="addHideClass('sectiona')">
-                    <h2>About</h2>
-                </button>
 
-                <button id="buttonw" onclick="addHideClass('sectionw')">
-                    <h2>Work</h2>
-                </button>
-
-                <button id="buttonr" href="#sectionh" onclick="addHideClass('sectionr')">
-                    <h2>Resume</h2>
-                </button>
-
-                <button id="buttonc" onclick="addHideClass('sectionc')">
-                    <h2>Contact</h2>
-                </button>
-            </div>
+    <header class="container-fluid row-flex">
+        <button id="dropbutton" class="dropbtn header-block hide">
+            <h1 class="dropbtn">&#9776;</h1>
+        </button>
+        <div id="mydropdown" class="dropdown-hide">
+            <button id="buttonh" class="active section-button">Home</button>
+            <button id="buttona" class="section-button">About</button>
+            <button id="buttonw" class="section-button">Work</button>
+            <button id="buttonr" class="section-button">Resume</button>
+            <button id="buttonc" class="section-button">Contact</button>
+            <button id="close-dropdown" class="dropbtn hide fas fa-close"></button>
         </div>
-        <a class="header-block" href="https://nikhilhore.github.io/PortfolioNikhilHore/site/">
-            <h1 id="nikhil">Nikhil</h1>
-            <h1 id="hore">Hore</h1>
-        </a>
+        <div>
+            <a href="https://nikhilhore.github.io/PortfolioNikhilHore/site/"><span
+                    class="lightskyblue">Nikhil</span><span class="lightcoral">Hore</span></a>
+        </div>
     </header>
-    <main id="main-container">
 
-        <div class="section-container" id="sectionh">
-            <div id="home-section">
-                <div>
-                    <h1>Hi,</h1>
-                    <h1>I'm Nikhil&nbsp;Hore</h1>
-                    <h2>Web&nbsp;Developer</h2>
-                    <br>
-                    <p>A self taught and passionate person with innovative mindset.</p>
-                </div>
-            </div>
+
+    <div id="main-container" class="container-fluid col-flex">
+
+        <div id="sectionh" class="section-container container">
+            <h2>Hi,</h2>
+            <h1>I'm Nikhil Hore</h1>
+            <h3>Web Developer</h3>
+            <p>A self taught and passionate person with innovative mindset.</p>
         </div>
 
-        <div class="section-container hidden" id="sectiona">
+        <div id="sectiona" class="section-container container hidden">
+            <h1>I design products with passion</h1>
             <br>
-            <div id="about">
-                <h1>I design products with passion</h1>
-                <br>
-                <br>
-                <br>
-                <div>
-                    <p>I did my</p>
-                    <h2>B. Tech. in Mechanical Engineering</h2>
-                    <p>from</p>
-                    <h3>Shri Guru Gobind Singhji Institute of Engineering and Technology</h3>
-                    <p>Nanded, Mahrashtra, India.</p>
-                    <p>during Aug 2018 - May 2022</p>
-                </div>
-                <br>
-                <br>
-                <div>
-                    <div id="description">
-                        <p>With good knowledge of fundamentals, some hands on practice and with lot of passion, trying to experience the field little. As a fresher I am actively seeking career opportunities in IT development field. And I desire to work with smart people and explore various Technology fields.</p>
-                    </div>
-                </div>
+            <br>
+            <div>
+                I graduated as a
+                <h3>Bachelor of Technology in Mechanical Engineering</h3>
+                from
+                <h4>Shri Guru Gobind Singhji Institute of Engineering and Technology</h4>
+                Nanded, Mahrashtra, India.
+                (Aug 2018 - May 2022)
             </div>
+            <br>
+            <p>
+                With good expertise of fundamentals, some palms on practice and with lot of ardour, looking to
+                experience the field little.
+            </p>
+            <p>
+                As a brisker I am actively seeking career opportunities in IT development discipline. And I desire to
+                work with smart people and discover diverse technology fields.
+            </p>
         </div>
 
-        <div class="section-container hidden" id="sectionw">
+        <div id="sectionw" class="section-container container hidden">
             <div id="work-container">
                 <div id="work1" class="work-item">
                     <div class="img-container"><img src="images/work/NIXmusicplayer.jpg" alt="NIXMusicPlayer"></div>
                     <div class="info-container">
-                        <h1 >NIX Music Player</h1>
+                        <h1>NIX Music Player</h1>
                         <h3><a href="https://nikhilhore.github.io/NIXMusicPlayer/site/">try on github</a></h3><br>
                         <p>Beautiful web music player. Made using HTML, CSS, Javascript and audio API.</p>
                     </div>
@@ -95,41 +77,36 @@
                 <div id="work2" class="work-item">
                     <div class="img-container"><img src="images/work/SnakeGame.jpg" alt="SnakeGame"></div>
                     <div class="info-container">
-                        <h1 >Console Snake Game</h1>
+                        <h1>Console Snake Game</h1>
                         <h3><a href="https://github.com/nikhilhore/SnakeGame">check repository on github</a></h3><br>
                         <p>Classic console snake game. Made using C++ object oriented programming language.</p>
                     </div>
                 </div>
-                <!-- <div id="work3" class="work-item">
-                    <div class="img-container"><img src="images/work/NIXmusicplayer.jpg" alt="NIXMusicPlayer"></div>
-                    <div class="info-container">
-                        <h1 >NIX Music Player</h1>
-                        <h3><a href="https://nikhilhore.github.io/NIXMusicPlayer/site/">try on github</a></h3><br>
-                        <p>Beautiful web music player. Made using HTML, CSS, Javascript and audio API.</p>
-                    </div>
-                </div> -->
             </div>
         </div>
 
-        <div class="section-container hidden" id="sectionr">
-            <h1 class="sectionheading">Take a look at my resume &darr;</h1>
-            <br>
-            <button><a href="https://drive.google.com/file/d/1r8ZkRkonPjORcW3mcLKXuRh8XgD0r19p/view?usp=sharing" target="blank"><h2>open</h2></a></button>
+        <div id="sectionr" class="section-container container col-flex hidden">
+            <h2>Take a look at my resume <div class="fas fa-arrow-down"></div>
+            </h2>
+            <button><a href="https://drive.google.com/file/d/1r8ZkRkonPjORcW3mcLKXuRh8XgD0r19p/view?usp=sharing"
+                    target="blank">open</a></button>
         </div>
 
-        <div class="section-container hidden" id="sectionc">
-            <h1 class="sectionheading">get in touch...</h1>
+        <div id="sectionc" class="section-container container hidden">
+            <center>
+                <h1>get in touch...</h1>
+            </center>
             <br>
             <div id="contact">
                 <div id="address-phone">
                     <div id="address">
-                        <p class="contact-element-headings">Address:&nbsp;</p>
+                        <p class="contact-element-headings">Address:&nbsp;&nbsp;</p>
                         <p>Flat no. 204, Vaishnavi Plaza,<br>Chahtrapati Chowk, Purna Road,<br>Nanded,
                             Maharashtra
                             431605.</p>
                     </div>
                     <div id="phone">
-                        <p class="contact-element-headings">Phone:&nbsp;</p>
+                        <p class="contact-element-headings">Phone:&nbsp;&nbsp;</p>
                         <p>&nbsp;&nbsp;&nbsp;+91 9503203950</p>
                     </div>
                 </div>
@@ -147,12 +124,13 @@
             </div>
         </div>
 
-    </main>
-    <footer>
-        <div>&copy; Nikhil S. Hore</div>
-        <div>&#128231; horenikhil5@gmail.com</div>
-    </footer>
-    <script src="main.js"></script>
+    </div>
+
+
+    <footer class="container-fluid col-flex">&copy; Nikhil Hore</footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
