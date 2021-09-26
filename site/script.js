@@ -1,9 +1,7 @@
 
 var dropBtn = document.getElementById('dropbutton');
-var closeBtn = document.getElementById('close-dropdown');
 
 dropBtn.addEventListener('click', dropdonwtoggle);
-closeBtn.addEventListener('click', dropdonwtoggle);
 
 function dropdonwtoggle() {
     document.getElementById("mydropdown").classList.toggle("dropdown-hide");
@@ -26,4 +24,14 @@ for (let i = 0; i < n; i++) {
         document.getElementById(buttonids[i]).classList.add("active");
         dropdonwtoggle();
     });
+}
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].classList.add('dropdown-hide');
+        }
+    }
 }
