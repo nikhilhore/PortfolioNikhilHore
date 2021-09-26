@@ -285,6 +285,12 @@ footer {
     }
 }
 
+@media screen and (min-height: 721px){
+    html, body {
+        background-position: bottom left;
+    }
+}
+
 .hidden {
     display: none;
 }
