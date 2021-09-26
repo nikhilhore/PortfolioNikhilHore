@@ -285,7 +285,7 @@ footer {
     }
 }
 
-@media screen and (min-height: 721px){
+@media screen and (min-height: 1081px){
     html, body {
         background-position: bottom left;
     }
