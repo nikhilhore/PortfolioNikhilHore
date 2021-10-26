@@ -205,6 +205,19 @@ header div a {
     height: 25px;
 }
 
+.form-control {
+    background-color: rgb(240, 240, 240);
+}
+
+.btn {
+    background-image: linear-gradient(to right, lightskyblue, lightcoral);
+}
+
+.btn h5 {
+    font-weight: 600;
+    color: black;
+}
+
 footer {
     min-height: 40px;
     background-color: rgb(0, 0, 0, 0.5);
