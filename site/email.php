@@ -9,7 +9,7 @@ $to = "horenikhil5@gmail.com";
 $subject = "Mail from portfolio";
 $txt = "Name: ".$name."\r\n Email: ".$email."\r\n Message: ".$message;
 
-$headers = "From: niknsh5@gmail.com"."\r\n"."CC: 2018bme018@sggs.ac.in";
+$headers = "From: ".$email;
 
 if ($email!=NULL){
     mail($to, $subject, $txt, $headers);
